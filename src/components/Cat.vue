@@ -667,6 +667,7 @@
             enableCookies() {
                 this.cookiesEnabled = true;
                 this.$cookies.set('cookiesEnabled', true, '365d');
+                this.saveState();
             }
         }
     }
